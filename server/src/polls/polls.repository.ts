@@ -6,7 +6,6 @@ import { IORedisKey } from 'src/redis.module';
 import { AddParticipantData, CreatePollData } from './types';
 import { Poll } from 'shared';
 
-
 @Injectable()
 export class PollsRepository {
   // to use time-to-live from configuration
