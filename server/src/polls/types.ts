@@ -1,6 +1,7 @@
 import { Request } from 'express';
 import { Socket } from 'socket.io';
 
+// service types
 export type CreatePollFields = {
   topic: string;
   votesPerVoter: number;
@@ -17,6 +18,17 @@ export type RejoinPollFields = {
   userID: string;
   name: string;
 };
+
+export interface AddParticipantFields {
+  pollID: string;
+  userID: string;
+  name: string;
+}
+
+export interface RemoveParticipantData {
+  pollID: string;
+  userID: string;
+}
 
 // repository types
 export type CreatePollData = {
