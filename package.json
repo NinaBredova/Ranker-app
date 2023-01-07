@@ -6,7 +6,7 @@
   "workspaces": [
     "client",
     "server",
-	"shared"
+    "shared"
   ],
   "scripts": {
     "docker:compose": "docker-compose up -d",
@@ -38,5 +38,9 @@
     "concurrently": "^7.6.0",
     "prettier": "^2.5.1",
     "wait-on": "^6.0.1"
+  },
+  "dependencies": {
+    "react-transition-group": "^4.4.5",
+    "valtio": "^1.8.2"
   }
 }
